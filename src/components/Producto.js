@@ -1,13 +1,53 @@
 import { Component } from "react";
 
+const styles = {
+    producto: {
+        color: '#fff',
+        background: 'linear-gradient(to right,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%)',
+        width: '30%',
+        padding: '10px 15px',
+        borderRadius: '5px',
+    },
+    content: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    img: {
+        width: '100%',
+    },
+    title: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    price: {
+        color: '#BEEE11',
+        padding: '6px 8px',
+        marginLeft: '15px',
+        background: 'rgba(103, 193, 245, 0.1)',
+        borderRadius: '5px',
+    },
+    developer: {
+        color: '#67c1f5',
+        marginTop: '0',
+    }
+}
+
 class Producto extends Component {
     render() {
         const { producto } = this.props
+
         return (
-            <div>
-                <img alt={producto.name} src={producto.img} />
-                <h3>{producto.name}</h3>
-                <p>{producto.price}</p>
+            <div style={styles.producto}>
+                <img style={styles.img} alt={producto.name} src={producto.img} />
+                <div style={styles.content}>
+                    <div style={styles.title}>
+                        <h3>{producto.name}</h3>
+                        <p style={styles.price}>${producto.price}</p>
+                    </div>
+                </div>
+                <p style={styles.developer}>{producto.developer}</p>
             </div>
         )
     }
