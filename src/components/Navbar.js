@@ -10,24 +10,31 @@ const styles = {
         justifyContent: 'center',
         backgroundColor: '#171d25',
         position: 'relative',
-        padding: '20px 50px',
+        padding: '20px',
     },
     container: {
+        width: '1200px',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '1200px',
+        position: 'relative',
     }
 }
 
 class Navbar extends Component {
     render() {
+        const { carro, esCarroVisible, mostrarCarro } = this.props
+        
         return (
             <nav style={styles.navbar}>
                 <div style={styles.container}>
                     <Logo />
-                    <Carro />
+                    <Carro
+                        carro={carro}
+                        esCarroVisible={esCarroVisible}
+                        mostrarCarro={mostrarCarro}
+                    />
                 </div>
             </nav>
         )

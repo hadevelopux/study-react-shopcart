@@ -6,7 +6,7 @@ const styles = {
         color: '#fff',
         background: 'linear-gradient(to right,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%)',
         width: '30%',
-        padding: '10px 15px',
+        padding: '15px',
         borderRadius: '5px',
     },
     container: {
@@ -37,7 +37,7 @@ const styles = {
 
 class Producto extends Component {
     render() {
-        const { producto } = this.props
+        const { producto, agregarAlCarro } = this.props
 
         return (
             <div style={styles.producto}>
