@@ -3,7 +3,7 @@ import { Component } from "react";
 const styles = {
     title: {
         color: '#fff',
-        fontWeight: '400',
+        fontWeight: '300',
         textTransform: 'uppercase',
         fontSize: '26px',
     }
