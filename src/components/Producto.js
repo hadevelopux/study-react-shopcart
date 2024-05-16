@@ -9,7 +9,7 @@ const styles = {
         padding: '10px 15px',
         borderRadius: '5px',
     },
-    content: {
+    container: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -42,7 +42,7 @@ class Producto extends Component {
         return (
             <div style={styles.producto}>
                 <img style={styles.img} alt={producto.name} src={producto.img} />
-                <div style={styles.content}>
+                <div style={styles.container}>
                     <div style={styles.title}>
                         <h3>{producto.name}</h3>
                         <p style={styles.price}>${producto.price}</p>
