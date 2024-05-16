@@ -1,4 +1,4 @@
-# study-react-shopcart
+# Shopcart (Practica de ReactJS)
 Recreando un carrito de compras como parte de mis estudios de ReactJS
 
 ## Available Scripts
