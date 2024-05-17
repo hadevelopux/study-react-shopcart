@@ -41,6 +41,7 @@ const styles = {
         color: '#fff',
         fontSize: '1.2rem',
         padding: '20px',
+        background:'linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%)',
     },
     precioTotalSpan: {
         fontWeight: 'bold',
