@@ -6,7 +6,7 @@ const styles = {
         fontSize: '0.9rem',
         marginLeft: '5px',
     }
-}
+};
 
 class BubbleAlert extends Component {
     getNumber(n) {

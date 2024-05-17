@@ -7,7 +7,7 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'space-between',
     }
-}
+};
 
 class Productos extends Component {
     render() {

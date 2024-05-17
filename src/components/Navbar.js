@@ -20,7 +20,7 @@ const styles = {
         alignItems: 'center',
         position: 'relative',
     }
-}
+};
 
 class Navbar extends Component {
     render() {

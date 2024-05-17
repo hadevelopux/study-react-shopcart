@@ -9,7 +9,7 @@ const styles = {
     container: {
         width: '1200px',
     }
-}
+};
 
 class Layout extends Component {
     render() {

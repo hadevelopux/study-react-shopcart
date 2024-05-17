@@ -11,7 +11,7 @@ const styles = {
         borderRadius: '5px',
         cursor: 'pointer',
     }
-}
+};
 
 class Button extends Component {
     render() {

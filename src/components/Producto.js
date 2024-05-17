@@ -33,7 +33,7 @@ const styles = {
         color: '#67c1f5',
         marginTop: '0',
     }
-}
+};
 
 class Producto extends Component {
     render() {

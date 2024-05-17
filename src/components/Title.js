@@ -7,7 +7,7 @@ const styles = {
         textTransform: 'uppercase',
         fontSize: '26px',
     }
-}
+};
 
 class Title extends Component {
     render() {

@@ -33,28 +33,49 @@ const styles = {
     img: {
         marginRight: '10px',
     },
-}
+    precioTotal: {
+        listStyleType: 'none',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        color: '#fff',
+        fontSize: '1.2rem',
+        padding: '20px',
+    },
+    precioTotalSpan: {
+        fontWeight: 'bold',
+        color: '#beee11',
+        textShadow: '1px 1px 0px rgba( 0, 0, 0, 0.3 )',
+    },
+};
 
 class DetallesCarro extends Component {
     render() {
         const { carro } = this.props
+        const precioTotal = carro.reduce((acc, el) => acc + (el.cantidad * el.price), 0)
 
         return (
             <div style={styles.detallesCarro}>
                 <ul style={styles.ul}>
                     {carro.map(x =>
                         <li style={styles.productos} key={x.name}>
-                            <span style={styles.title}>
+                            <div style={styles.title}>
                                 <img style={styles.img} alt={x.name} src={x.img} width='50' height='32' />
-                                <spa>
+                                <div>
                                     {x.name}
-                                </spa>
-                            </span>
-                            <span>
+                                </div>
+                            </div>
+                            <div>
                                 ({x.cantidad})
-                            </span>
+                            </div>
                         </li>
                     )}
+                    <li style={styles.precioTotal}>
+                        <div>Precio total:</div>
+                        <div style={styles.precioTotalSpan}>
+                            ${precioTotal}
+                        </div>
+                    </li>
                 </ul>
             </div>
         )
