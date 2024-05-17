@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "react"
 
 const styles = {
     layout: {
@@ -8,7 +8,7 @@ const styles = {
     },
     container: {
         width: '1200px',
-    }
+    },
 }
 
 class Layout extends Component {
@@ -23,4 +23,4 @@ class Layout extends Component {
     }
 }
 
-export default Layout;
+export default Layout

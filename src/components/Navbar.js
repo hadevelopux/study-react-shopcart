@@ -1,6 +1,6 @@
-import { Component } from "react";
-import Logo from './Logo';
-import Carro from './Carro';
+import { Component } from "react"
+import Logo from './Logo'
+import Carro from './Carro'
 
 const styles = {
     navbar: {
@@ -19,7 +19,7 @@ const styles = {
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'relative',
-    }
+    },
 }
 
 class Navbar extends Component {
@@ -41,4 +41,4 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar;
+export default Navbar

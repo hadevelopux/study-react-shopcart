@@ -1,5 +1,5 @@
-import { Component } from "react";
-import Button from './Button';
+import { Component } from "react"
+import Button from './Button'
 
 const styles = {
     producto: {
@@ -32,7 +32,7 @@ const styles = {
     developer: {
         color: '#67c1f5',
         marginTop: '0',
-    }
+    },
 }
 
 class Producto extends Component {
@@ -57,4 +57,4 @@ class Producto extends Component {
     }
 }
 
-export default Producto;
+export default Producto

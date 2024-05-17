@@ -1,7 +1,7 @@
-import { Component } from "react";
-import Button from './Button';
-import BubbleAlert from './BubbleAlert';
-import DetallesCarro from './DetallesCarro';
+import { Component } from "react"
+import Button from './Button'
+import BubbleAlert from './BubbleAlert'
+import DetallesCarro from './DetallesCarro'
 
 const styles = {
     button: {
@@ -9,7 +9,7 @@ const styles = {
         flexDirection: 'row',
         alignItems: 'center',
         position: 'relative',
-    }
+    },
 }
 
 class Carro extends Component {
@@ -22,11 +22,9 @@ class Carro extends Component {
                 <Button onClick={mostrarCarro}>
                     <div style={styles.button}>
                         Carro
-                        <span>
-                            {cantidad !== 0
-                                ? <BubbleAlert value={cantidad} />
-                                : null}
-                        </span>
+                        <div>
+                            {cantidad !== 0 ? <BubbleAlert value={cantidad} /> : null}
+                        </div>
                     </div>
                 </Button>
                 {esCarroVisible ? <DetallesCarro carro={carro} /> : null}
@@ -35,4 +33,4 @@ class Carro extends Component {
     }
 }
 
-export default Carro;
+export default Carro

@@ -1,11 +1,11 @@
-import { Component } from "react";
+import { Component } from "react"
 
 const styles = {
     bubbleAlert: {
         color: '#fff',
         fontSize: '0.9rem',
         marginLeft: '5px',
-    }
+    },
 }
 
 class BubbleAlert extends Component {
@@ -24,4 +24,4 @@ class BubbleAlert extends Component {
     }
 }
 
-export default BubbleAlert;
+export default BubbleAlert
