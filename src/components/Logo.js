@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "react"
 
 const styles = {
     logo: {
@@ -11,8 +11,8 @@ const styles = {
     },
     span: {
         fontWeight: '100',
-    }
-};
+    },
+}
 
 class Logo extends Component {
     render() {
@@ -21,8 +21,8 @@ class Logo extends Component {
                 {`Shop`}
                 <div style={styles.span}>Cart</div>
             </div>
-        );
+        )
     }
 }
 
-export default Logo;
+export default Logo

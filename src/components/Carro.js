@@ -1,7 +1,7 @@
-import { Component } from "react";
-import Button from './Button';
-import BubbleAlert from './BubbleAlert';
-import DetallesCarro from './DetallesCarro';
+import { Component } from "react"
+import Button from './Button'
+import BubbleAlert from './BubbleAlert'
+import DetallesCarro from './DetallesCarro'
 
 const styles = {
     button: {
@@ -10,12 +10,12 @@ const styles = {
         alignItems: 'center',
         position: 'relative',
     },
-};
+}
 
 class Carro extends Component {
     render() {
-        const { carro, esCarroVisible, mostrarCarro } = this.props;
-        const cantidad = carro.reduce((acc, el) => acc + el.cantidad, 0);
+        const { carro, esCarroVisible, mostrarCarro } = this.props
+        const cantidad = carro.reduce((acc, el) => acc + el.cantidad, 0)
 
         return (
             <div>
@@ -29,8 +29,8 @@ class Carro extends Component {
                 </Button>
                 {esCarroVisible ? <DetallesCarro carro={carro} /> : null}
             </div>
-        );
+        )
     }
 }
 
-export default Carro;
+export default Carro

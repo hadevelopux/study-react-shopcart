@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "react"
 
 const styles = {
     title: {
@@ -6,8 +6,8 @@ const styles = {
         fontWeight: '300',
         textTransform: 'uppercase',
         fontSize: '26px',
-    }
-};
+    },
+}
 
 class Title extends Component {
     render() {
@@ -17,4 +17,4 @@ class Title extends Component {
     }
 }
 
-export default Title;
+export default Title

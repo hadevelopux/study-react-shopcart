@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "react"
 
 const styles = {
     detallesCarro: {
@@ -47,7 +47,7 @@ const styles = {
         color: '#beee11',
         textShadow: '1px 1px 0px rgba( 0, 0, 0, 0.3 )',
     },
-};
+}
 
 class DetallesCarro extends Component {
     render() {
@@ -82,4 +82,4 @@ class DetallesCarro extends Component {
     }
 }
 
-export default DetallesCarro;
+export default DetallesCarro

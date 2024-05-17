@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "react"
 
 const styles = {
     button: {
@@ -10,8 +10,8 @@ const styles = {
         border: 'none',
         borderRadius: '5px',
         cursor: 'pointer',
-    }
-};
+    },
+}
 
 class Button extends Component {
     render() {
@@ -21,4 +21,4 @@ class Button extends Component {
     }
 }
 
-export default Button;
+export default Button
